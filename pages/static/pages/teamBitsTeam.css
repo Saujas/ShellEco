@@ -1,0 +1,1104 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body
+{
+    background-color: rgb(200,200,200);
+    width: 100vw;
+    height: auto;
+}
+
+.loaderScreen
+{
+	background-color: rgba(0,100,120,1);
+	width: 100vw;
+	height: 100vh;
+}
+
+.loaderScreen > .loader
+{
+	width: 100px;
+	height: 100px;
+	border: 4px solid white;
+	border-radius: 50%;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.loaderScreen > .loader > .dot
+{
+	position: relative;
+	top: 1vh;
+	left: 50%;
+	width: 5px;
+	height: 5px;
+	background: white;
+	border-radius: 50%;
+	transform-origin: 0 45px;
+	transform: rotate(0deg);
+	animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate
+{
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+.captain > div:hover, .design > div:hover, .friction > div:hover, .engine > div:hover, .management > div:hover
+{
+	animation: shadow 0.2s linear forwards;
+}
+
+@keyframes shadow
+{
+	0% { box-shadow: 1px 1px 1px grey; }
+	100% { box-shadow: 0px 0px 10px grey; }
+}
+
+.support
+{
+    width: 25vw;
+    height: 21vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background: rgba(0,0,0,0.9);
+    z-index: 105;
+    clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
+    transition: opacity 0.5s linear;
+}
+
+.facebooktwo
+{
+    position: absolute;
+    top: 0;
+    left: 81vw;
+    z-index: 200;
+    width: 2vw;
+    height: 4vh;
+    overflow: hidden;
+    font-size: 20px;
+    background: rgb(0,200,0);
+    color: white;
+}
+
+.facebooktwo > i
+{
+    transform: translate(8px, 3px);
+}
+
+.instagramtwo
+{
+    position: absolute;
+    top: 0;
+    left: 85vw;
+    z-index: 200;
+    width: 2vw;
+    height: 4vh;
+    overflow: hidden;
+    font-size: 20px;
+    background: rgb(0,200,0);
+    color: white;
+}
+
+.instagramtwo > i
+{
+    transform: translate(5px, 2px);
+}
+
+.twittertwo
+{
+    position: absolute;
+    top: 0;
+    left: 89vw;
+    z-index: 200;
+    width: 2vw;
+    height: 4vh;
+    overflow: hidden;
+    font-size: 20px;
+    background: rgb(0,200,0);
+    color: white;
+}
+
+.twittertwo > i
+{
+    transform: translate(5px, 2.5px);
+}
+
+.twittertwo:hover
+{
+    color: black;
+}
+
+.head
+{
+    width: 100vw;
+    height: 11vh;
+    background: rgba(65,65,65,0.8);
+    z-index: 105;
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    overflow-y: hidden;
+}
+
+.head > span
+{
+    opacity: 0;
+}
+
+#mySidenav
+{
+    opacity: 0;
+}
+
+.head > img
+{
+    display: inline-block;
+    width: auto;
+    position: relative;
+    top: 2vh;
+    color: black;
+    width: 21vw;
+}
+
+.head > a
+{
+    position: relative;
+    left: 50vw;
+    top: 1.5vh;
+    margin-right: 1.5%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 16px;
+}
+
+.head > a:hover
+{
+    text-decoration: none;
+}
+
+.head > a:nth-child(4)
+{
+    color: lightgreen;
+}
+
+.head > a:hover
+{
+    color: lightgreen;
+}
+
+.head > .line
+{
+    width: 5.5vw;
+    background: rgba(0,255,0,1);
+    height: 0.3vh;
+    position: relative;
+    top: 0vh;
+    left: 84.9vw;
+}
+
+.head > span
+{
+    opacity: 0;
+}
+
+.stuck
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.titans
+{
+	position: absolute;
+	top: 0vh;
+	width: 100vw;
+	height: 100vh;
+    background: #eee;
+	overflow-y: hidden;
+}
+
+.container
+{
+    position: absolute;
+    top: 103vh;
+    left: 5vw;
+    width: 90vw;
+}
+
+.container > blockquote > h1
+{
+    position: relative;
+    top: 0;
+}
+
+.container > blockquote > p
+{
+    font-size: 15px;
+}
+
+.container > h1
+{
+    overflow-y: hidden;
+}
+
+.captain
+{
+    display: grid;
+    grid-template-areas: 'teamCaptain teamViceCaptain teamABCD marketingHead';
+    height: 55vh;
+    position: absolute;
+    top: 130vh;
+    left: 1vw;
+    grid-gap: 90px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.teamCaptain { grid-area: teamCaptain; }
+.teamViceCaptain { grid-area: teamViceCaptain; }
+.teamABCD { grid-area: teamABCD; }
+.marketingHead { grid-area: marketingHead; }
+
+.captain > div
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    overflow: hidden;
+    height: 48vh;
+}
+
+.captain > div > img
+{
+    width: 25vw;
+    transform: translateX(-3.5vw);
+}
+
+.captain > div > p
+{
+    transform: translateY(10px);
+}
+
+h1
+{
+    position: absolute;
+    top: 182vh;
+    left: 50%;
+    font-size: 60px;
+    transform: translateX(-50%);
+    width: auto;
+    overflow-y: hidden;
+    word-spacing: 20px;
+}
+
+.evp
+{
+    position: absolute;
+    top: 195vh;
+    left: 7vw;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.powerTrain
+{
+    display: grid;
+    grid-template-areas: 'nihar sparsh sidharth parth'
+                        'jyoti tejas tejas tejas';
+    position: absolute;
+    top: 210vh;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    grid-gap: 50px 150px;
+}
+
+.nihar { grid-area: nihar; }
+.sparsh { grid-area: sparsh; }
+.sidharth { grid-area: sidharth; }
+.parth { grid-area: parth; }
+.jyoti { grid-area: jyoti; }
+.tejas { grid-area: tejas; }
+
+.powerTrain > div
+{
+    background-color: rgb(0,0,0);
+    text-align: center;
+    font-size: 30px;
+    width: 12vw;
+    height: 40vh;
+    overflow: hidden;
+    color: white;
+}
+
+.powerTrain > div:hover
+{
+    box-shadow: 2px 2px 2px 3px lightgrey;
+}
+
+.powerTrain > div > img
+{
+    transform: rotate(-90deg);
+    width: 20vw;
+    position: relative;
+    left: -3.5vw;
+    top: 5vh;
+}
+
+.powerTrain > div > p
+{
+    position: relative;
+    top: 14%;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background: white;
+    color: black;
+}
+
+.chas
+{
+    position: absolute;
+    top: 315vh;
+    left: 7vw;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chasis
+{
+    display: grid;
+    grid-template-areas: 'sarthak abhishek aradhya';
+    position: absolute;
+    top: 335vh;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    grid-gap: 20px 150px;
+    padding: 5px;
+}
+
+.sarthak { grid-area: sarthak; }
+.abhishek { grid-area: abhishek; }
+.aradhya { grid-area: aradhya; }
+
+/*.chasis > div
+{
+    background-color: grey;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    overflow: hidden;
+    height: 41vh;
+    width: 15vw;
+    color: white;
+}*/
+
+.chasis > div
+{
+    background: grey;
+    text-align: center;
+    font-size: 30px;
+    height: 41vh;
+    overflow: hidden;
+    width: 15vw;
+    color: white;
+}
+
+.chasis > div:hover
+{
+    box-shadow: 0px 2px 15px lightgrey;
+}
+
+.chasis > div > img
+{
+    width: 22.5vw;
+    position: relative;
+    top: 7vh;
+    left: -3.7vw;
+    transform: rotate(-90deg);
+}
+
+.chasis > div > p
+{
+    position: relative;
+    top: 3vh;
+    padding: 10px;
+    font-size: 20px;
+    background: white;
+    color: black;
+}
+
+.ice
+{
+    position: absolute;
+    top: 390vh;
+    left: 7vw;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.icept
+{
+    display: grid;
+    grid-template-areas: 'aditya anurag anurag';
+    position: absolute;
+    top: 410vh;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    grid-gap: 20px 150px;
+    padding: 5px;
+}
+
+.aditya { grid-area: aditya; }
+.anurag { grid-area: anurag; }
+
+.icept > div
+{
+    background-color: grey;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    overflow: hidden;
+    height: 45vh;
+    width: 20vw;
+    color: white;
+}
+
+.icept > div:hover
+{
+    box-shadow: -2px -1px 5px 0px lightgrey;
+}
+
+.icept > div > img
+{
+    width: 150%;
+    position: relative;
+    top: 0;
+    left: -25%;
+    transform: rotate(-90deg);
+}
+
+.icept > div > p
+{
+    position: relative;
+    padding: 10px;
+    top: -3vh;
+    transform: translateY(-5px);
+    font-size: 20px;
+    background: white;
+    color: black;
+}
+
+.vd
+{
+    position: absolute;
+    top: 470vh;
+    left: 7vw;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.vehicle
+{
+    display: grid;
+    grid-template-areas: 'yatik gaurav gaurav';
+    position: absolute;
+    top: 490vh;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    grid-gap: 20px 150px;
+    padding: 5px;
+}
+
+.yatik { grid-area: yatik; }
+.gaurav { grid-area: gaurav; }
+
+.vehicle > div
+{
+    background-color: grey;
+    text-align: center;
+    font-size: 30px;
+    height: 100%;
+    overflow: hidden;
+    height: 45vh;
+    width: 20vw;
+    color: white;
+}
+
+.vehicle > div:hover
+{
+    box-shadow: 0px 2px 15px lightgrey;
+}
+
+.vehicle > div > img
+{
+    width: 150%;
+    position: relative;
+    top: 0;
+    left: -25%;
+    transform: rotate(-90deg);
+}
+
+.vehicle > div > p
+{
+    position: relative;
+    padding: 10px;
+    top: -3vh;
+    transform: translateY(-5px);
+    font-size: 20px;
+    background: white;
+    color: black;
+}
+
+.footer
+{
+	position: absolute;
+	top: 550vh;
+	height: 50vh;
+	width: 100vw;
+	overflow-y: hidden;
+}
+
+.footer:after
+{
+    content: "";
+    background-image: url('ShellEcoImages/72.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer > .cover
+{
+    width: 100vw;
+    height: 140vh;
+    background: rgba(0,0,0,0.5);
+}
+
+.footer > .cover > h2
+{
+    position: relative;
+    top: 3vh;
+    left: 5vw;
+    width: 90vw;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.footer > .cover > div
+{
+    width: 20vw;
+    height: 19vh;
+    display: inline-block;
+    margin-left: 4vw;
+    transform: translate(0vw, 0vh);
+}
+
+.footer > .cover > div > p
+{
+    text-align: center;
+    transform: translateY(2vh);
+    color: white;
+    font-size: 25px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    overflow: hidden;
+}
+
+.footer > .cover > img
+{
+    position: relative;
+    top: 9vh;
+    left: 10vw;
+}
+
+.footer > .cover > p
+{
+    position: relative;
+    top: 12vh;
+    left: 10vw;
+    width: 80vw;
+    height: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+.footer > .cover > hr
+{
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    text-align: center;
+}
+
+.footer > .cover > h1
+{
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.footer > .cover > .facebook
+{
+    position: relative;
+    top: 25vh;
+    left: 45vw;
+    color: white;
+    font-size: 35px;
+}
+
+.footer > .cover > .instagram
+{
+    position: relative;
+    top: 25vh;
+    left: 48vw;
+    color: white;
+    font-size: 35px;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+    background: #555; 
+}
+
+@media screen and (max-width: 1050px)
+{
+	.headCopy
+	{
+		display: none;
+	}
+
+	.head > a
+	{
+		position: relative;
+		left: 5vw;
+		font-size: 20px;
+	}
+
+	.head > .line
+	{
+		display: none;
+	}
+
+	.head > img
+	{
+		width: 40vw;
+	}
+
+	.titans
+	{
+		position: absolute;
+		top: 7.8vh;
+		background-image: url('ShellEcoImages/71.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.captain
+	{
+		height: 120vh;
+	}
+
+	.captain > .h61
+	{
+		position: relative;
+		top: 17vh;
+		left: 9vw;
+		font-size: 25px;
+		display: inline-block;
+	}
+
+	.captain > .h62
+	{
+		position: relative;
+		top: 17vh;
+		left: 24vw;
+		font-size: 25px;
+		display: inline-block;
+	}
+
+	.captain > .h63
+	{
+		position: absolute;
+		top: 72vh;
+		left: 9vw;
+		font-size: 25px;
+		display: inline-block;
+	}
+
+	.captain > .h64
+	{
+		position: absolute;
+		top: 72vh;
+		left: 60vw;
+		font-size: 25px;
+		display: inline-block;
+	}
+
+	.captain > .teamCaptain
+	{
+		position: relative;
+		top: 20vh;
+		left: 3vw;
+		width: 45vw;
+		height: 40vh;
+		background: white;
+		overflow-y: hidden;
+		display: inline-block;
+		border: 5px solid white;
+	}
+
+	.captain > .teamCaptain > p
+	{
+		font-size: 35px;
+		transform: translateX(90%);
+	}
+
+	.captain > .teamViceCaptain
+	{
+		position: relative;
+		top: 20vh;
+		left: 5vw;
+		width: 45vw;
+		height: 40vh;
+		background: white;
+		overflow-y: hidden;
+		display: inline-block;
+		border: 5px solid white;
+	}
+
+	.captain > .teamViceCaptain > p
+	{
+		font-size: 35px;
+		transform: translateX(90%);
+	}
+
+	.captain > .teamABCD
+	{
+		position: relative;
+		top: 30vh;
+		left: 3vw;
+		width: 45vw;
+		height: 40vh;
+		background: white;
+		overflow-y: hidden;
+		display: inline-block;
+		border: 5px solid white;
+	}
+
+	.captain > .teamABCD > p
+	{
+		font-size: 35px;
+		transform: translateX(50%);
+	}
+
+	.captain > .teamManager
+	{
+		position: relative;
+		top: 30vh;
+		left: 5vw;
+		width: 45vw;
+		height: 40vh;
+		background: white;
+		overflow-y: hidden;
+		display: inline-block;
+		border: 5px solid white;
+	}
+
+	.captain > .teamManager > p
+	{
+		font-size: 35px;
+		transform: translateX(50%);
+	}
+
+	.footer
+	{
+		position: absolute;
+		top: 171vh;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	.head > a
+	{
+		font-size: 15px;
+	}
+
+	.captain
+	{
+		height: 130vh;
+	}
+
+	.captain > .h61
+	{
+		position: relative;
+		left: 3vw;
+	}
+
+	.captain > .h62
+	{
+		position: relative;
+		left: 10vw;
+	}
+
+	.captain > .teamCaptain > p
+	{
+		font-size: 25px;
+	}
+
+	.captain > .teamViceCaptain > p
+	{
+		font-size: 25px;
+	}
+
+	.captain > .teamABCD > p
+	{
+		font-size: 25px;
+	}
+
+	.captain > .teamManager > p
+	{
+		font-size: 25px;
+	}
+
+	.footer
+	{
+		position: absolute;
+		top: 180vh;
+	}
+}
+
+@media screen and (max-width: 450px)
+{
+	.head > span
+	{
+		opacity: 1;
+		position: absolute;
+		right: 2vw;
+		top: 0;
+		font-size: 30px;
+	}
+
+	#mySidenav
+	{
+		opacity: 1;
+		z-index: 11;
+	}
+
+	.sidenav {
+	    height: 100%;
+	    width: 0;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	    background-color: #111;
+	    overflow-x: hidden;
+	    transition: 0.5s;
+	    padding-top: 60px;
+	}
+
+	.sidenav a {
+	    padding: 8px 8px 8px 32px;
+	    text-decoration: none;
+	    font-size: 25px;
+	    color: #818181;
+	    display: block;
+	    transition: 0.3s;
+	    overflow-x: show;
+	}
+
+	.sidenav a:hover {
+	    color: #f1f1f1;
+	}
+
+	.sidenav .closebtn {
+	    position: absolute;
+	    top: 0;
+	    right: 25px;
+	    font-size: 36px;
+	    margin-left: 50px;
+	}
+
+	.head > a
+	{
+		display: none;
+	}
+
+	.titans
+	{
+		position: absolute;
+		top: 6vh;
+	}
+
+	.captain
+	{
+		height: 215vh;
+	}
+
+	.captain > h1
+	{
+		font-size: 20px;
+	}
+
+	.captain .h61, .captain .h62, .captain .h63, .captain .h64
+	{
+		display: none;
+	}
+
+	.captain .teamCaptain
+	{
+		width: 80vw;
+		top: 20vh;
+		left: 10vw;
+	}
+
+	.captain .teamViceCaptain
+	{
+		width: 80vw;
+		top: 25vh;
+		left: 10vw;
+	}
+
+	.captain .teamABCD
+	{
+		width: 80vw;
+		top: 30vh;
+		left: 10vw;
+	}
+
+	.captain .teamManager
+	{
+		width: 80vw;
+		top: 35vh;
+		left: 10vw;
+	}
+
+	.footer
+	{
+		position: absolute;
+		top: 265vh;
+	}
+
+	.footer > .cover > h1
+	{
+		left: 2vw;
+	}
+}
+
+@media screen and (max-width: 365px)
+{
+	.captain > .teamCaptain > p
+	{
+		font-size: 20px;
+	}
+
+	.captain > .teamViceCaptain > p
+	{
+		font-size: 20px;
+	}
+
+	.captain > .teamABCD > p
+	{
+		font-size: 20px;
+	}
+
+	.captain > .teamManager > p
+	{
+		font-size: 20px;
+	}
+
+	.footer
+	{
+		font-size: 10px;
+	}
+
+	.footer .cover h1
+	{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 380px) and (max-height: 815px)
+{
+	.captain > .teamCaptain
+	{
+		height: 35vh;
+	}
+
+	.captain > .teamViceCaptain
+	{
+		height: 35vh;
+	}
+
+	.captain > .teamABCD
+	{
+		height: 35vh;
+	}
+
+	.captain > .teamManager
+	{
+		height: 35vh;
+	}
+
+	.footer
+	{
+		position: absolute;
+		top: 240vh;
+	}
+}

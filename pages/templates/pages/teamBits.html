@@ -1,0 +1,365 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shell Eco Marathon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Text+Me+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $(".link1").mouseover(function()
+            {
+                $(".line").css("left","51.2vw");
+                $(".line").css("width","2.8vw");
+            });
+            $(".link2").mouseover(function()
+            {
+                $(".line").css("left","55.7vw");
+                $(".line").css("width","5vw");
+            });
+            $(".link3").mouseover(function()
+            {
+                $(".line").css("left","62.7vw");
+                $(".line").css("width","5.5vw");
+            });
+            $(".link4").hover(function()
+            {
+                $(".line").css("left","70vw");
+                $(".line").css("width","5vw");
+            });
+            $(".link5").hover(function()
+            {
+                $(".line").css("left","76.7vw");
+                $(".line").css("width","7vw");
+            });
+            $(".link6").hover(function()
+            {
+                $(".line").css("left","85.5vw");
+                $(".line").css("width","5vw");
+            });
+            $(".link7").hover(function()
+            {
+                $(".line").css("left","92.4vw");
+                $(".line").css("width","5vw");
+            });
+        });
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="{% static 'pages/teamBits.css' %}"/>
+</head>
+<body>
+
+    <div class="support"></div>
+    <a class="facebooktwo" href="https://m.facebook.com/profile.php?id=228172260639135&ref=content_filter"><i class="fa fa-facebook"></i></a>
+    <a class="instagramtwo" href="https://www.instagram.com/team_bits_shellecomarathon/"><i class="fa fa-instagram"></i></a>
+    <a class="twittertwo" href="https://twitter.com/_TeamBITS"><i class="fa fa-twitter"></i></a>
+
+    <div class="head">
+        <img src="{% static 'ShellEcoImages/teamLogo.png' %}" />
+        <a href="#imageContainer" class="link1">HOME</a>
+        <a href="#about" class="link2">ABOUT US</a>
+        <a href="#aboutShell" class="link3">SHELL-ECO</a>
+        <a href="#currentSponsors" class="link4">PARTNERS</a>
+        <a href="#contactDetails" class="link5">COLLABORATE</a>
+        <a href="/efficiency/" class="link6">OUR CARS</a>
+        <a href="/team/" class="link7">THE TEAM</a>
+        <span class="span" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div class="line"></div>
+        <div class="line2"></div>
+    </div>
+
+    <!-- <div id="mySidenav" class="sidenav">
+        <a class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="file:///C:/html_css_pages/teamEcoTitans.html#">Home</a>
+        <a href="file:///C:/html_css_pages/teamEcoTitansEfficiency.html#">Our Cars</a>
+        <a href="file:///C:/html_css_pages/teamEcoTitansTeam.html#">The Team</a>
+        <a href="file:///C:/html_css_pages/teamEcoTitansSponsors.html#">Partnerships</a>
+    </div> -->
+
+    <div class="makeBlur"></div>
+    <div class="slideshow-container" id="imageContainer">
+
+        <div class="mySlides">
+            <img src="{% static 'ShellEcoImages/cover.jpg' %}" style="width:100%;height:100vh">
+        </div>
+
+        <div class="mySlides">
+            <img src="{% static 'ShellEcoImages/abcd.jpg' %}" style="width:100%;height:100vh">
+        </div>
+
+        <div class="mySlides">
+            <img src="{% static 'ShellEcoImages/72.jpg' %}" style="width:100%;height:100vh">
+        </div>
+
+        <div class="mySlides">
+            <img src="{% static 'ShellEcoImages/19.png' %}" style="width:100%;height:100vh">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center" class="dotContainer">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="text">
+        <h1><b>Team BITS</b></h1>
+        <p>Making ultra fuel-efficient cars with an aim to achieve zero emissions</p>
+    </div>
+
+    <div class="about" id="about">
+        <img src="{% static 'ShellEcoImages/Team.jpg' %}" style="width:100vw;height:89vh">
+        <div class="elaborate"><h1>About<br>the<br>Team</h1></div>
+        <div class="upperHeader"><p>Team BITS has been a pioneer in the development of automobile engine efficiency since its inception in 2012. The team which started with a group of 10 excited students has now culminated to make it one of the torchbearers of the event from the subcontinent. The contemporary team thrives on the geniuses of its 35 talented members from various fields and stages of Engineering and Sciences studies and has grown into a structured organization with subsystems for powertrain, design and aerodynamics, vehicles dynamics and operations. <br><br>For the past 2 years, the team has been working on making the 1st Indian Car to run on 100% Ethanol (E-100) fuel and made history by successfully running it in Shell Eco-Marathon Asia, 2018. </p></div>
+    </div>
+
+    <div class="aboutShell" id="aboutShell">
+        <img src="{% static 'ShellEcoImages/about.jpg' %}" style="width: 100vw;height:89vh;">
+        <div class="description"><p>Shell Eco-Marathon is an international event which aims to meet energy needs of the society in ways that are economically, socially and environmentally viable for now and for the future. It challenges student teams from around the world to design and test ultra-energy-efficient vehicles. The recent Asia event registered a gathering of over 22,000 spectators with around 123 teams competing from more than 20 countries in Asia with an international media coverage</p></div>
+        <div class="prototype"><h2>Prototype</h2></div>
+        <div class="urban"><h2>Urban Concept</h2></div>
+        <div class="protoExtension"><p><b>Drivers squeeze into aerodynamic vehicles, lying on their backs to steer around the track</b></p></div>
+        <div class="urbanExtension"><p><b>Urban Concept: Cars look more familiar to modern-day vehicles. Built to roadworthy specifications</b></p></div>
+        <div class="downarrow1"></div>
+        <div class="downarrow2"></div>
+        <div class="heading"><h1>About<br>Shell eco-<br>Marathon</h1></div>
+    </div>
+
+    <div class="currentSponsors" id="currentSponsors">
+        <h1 style="position: absolute;left: 35vw;font-size: 50px;top: 2vh;">Our Partners</h1><br>
+        <div class="sp2">
+            <img src="{% static 'ShellEcoImages/58.jpg' %}" style="width: 80%;height: 90%;">
+        </div>
+        <div class="sp3">
+            <img src="{% static 'ShellEcoImages/59.jpg' %}" style="width: 70%;height: 90%;">
+        </div>
+        <div class="sp4">
+            <img src="{% static 'ShellEcoImages/60.png' %}" style="width: 60%;height: 90%;">
+        </div>
+        <div class="sp5">
+            <img src="{% static 'ShellEcoImages/61.png' %}" style="width: 140%;height: 70%;transform: translate(-42%, -50%);">
+        </div>
+        <div class="sp6">
+            <img src="{% static 'ShellEcoImages/62.png' %}" style="width: 100%;height: 50%;">
+        </div>
+        <div class="sp7">
+            <img src="{% static 'ShellEcoImages/63.png' %}" style="width: 80%;height: 90%;">
+        </div>
+        <div class="sp8">
+            <img src="{% static 'ShellEcoImages/64.png' %}" style="width: 80%;height: 90%;">
+        </div>
+        <div class="sp9">
+            <img src="{% static 'ShellEcoImages/65.png' %}" style="width: 80%;height: 90%;">
+        </div>
+    </div>
+    <form action="/" method="post"> {% csrf_token %}
+        <div class="contactDetails" id="contactDetails">
+            <img src="{% static 'ShellEcoImages/Team.jpg' %}" style="width:100vw;height:89vh">
+            <div class="fuelPassion">
+                <h1>Fuel<br>our<br>Passion</h1>
+            </div>
+            <div class="inputForm">
+                <h2>Partner with us</h2>
+                <input type="text" name="text" placeholder="Enter your name"><br><br><br>
+                <input type="email" name="email" placeholder="Enter your email"><br><br><br>
+                <input type="number" name="number" placeholder="Enter your number"><br><br><br>
+                <input type="submit" name="submit" style="background: rgba(0,200,0,0.8);border:none;padding:none;margin:none;color:white">
+            </div>
+        </div>
+    </form>
+
+    <div class="footer">
+        <div class="cover">
+            <h2>Contact Us</h2>
+            <hr>
+            <h1>Copyright © 2018 Team BITS. All Rights Reserved.</h1>
+            <div class="prateek">
+                <p>Prateek Jain</p>
+                <p>231456588</p>
+            </div>
+            <div class="deep">
+                <p>Deep Sheth</p>
+                <p>489624585</p>
+            </div>
+            <div class="aman">
+                <p>Aman Garg</p>
+                <p>478523552</p>
+            </div>
+            <div class="utkarsh">
+                <p>Utkarsh Agarwal</p>
+                <p>123456789</p>
+            </div>
+        </div>
+    </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+        var modal = document.getElementsByClassName('block')[0];
+        var span = document.getElementsByClassName("close")[0];
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                   if (target.length) {
+                     $('html,body').animate({
+                         scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+</script>
+
+<script>
+
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementsByClassName('head')[0];
+    var sticky = header.offsetTop;
+    var support = document.getElementsByClassName("support")[0];
+    var about = document.getElementsByClassName("about")[0];
+    abouttt = about.offsetTop;
+    var currentSponsors = document.getElementsByClassName("currentSponsors")[0];
+    var currenttt = currentSponsors.offsetTop;
+    var contactDetails = document.getElementsByClassName("contactDetails")[0];
+    var contacttt = contactDetails.offsetTop;
+    var aboutShell = document.getElementsByClassName("aboutShell")[0];
+    var aboutttShell = aboutShell.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("stuck");
+            support.style.opacity = 0;
+        } else {
+            header.classList.remove("stuck");
+            support.style.opacity = 1;
+        }
+
+        if (window.pageYOffset > abouttt-1 && window.pageYOffset < abouttt+70) {
+            header.style.backgroundColor = "rgb(0,0,0)";
+        }
+        else if(window.pageYOffset > currenttt-1 && window.pageYOffset < currenttt+70) {
+            header.style.backgroundColor = "rgb(0,0,0)";
+        }
+        else if(window.pageYOffset > contacttt-2 && window.pageYOffset < contacttt+70) {
+            header.style.backgroundColor = "rgb(0,0,0)";
+        }
+        else if(window.pageYOffset > aboutttShell-2 && window.pageYOffset < aboutttShell+70) {
+            header.style.backgroundColor = "rgb(0,0,0)";
+        }
+        else {
+            header.style.backgroundColor = 'rgba(65,65,65,0.8)';
+        }
+    }
+
+</script>
+
+<script>
+    
+    var prototype = document.getElementsByClassName("prototype")[0];
+    var urban = document.getElementsByClassName("urban")[0];
+    var first = 0;
+    var second = 0;
+    var protoExtension = document.getElementsByClassName("protoExtension")[0];
+    var urbanExtension = document.getElementsByClassName("urbanExtension")[0];
+
+    prototype.addEventListener('click', function() {
+        if (first == 0) {
+            prototype.style.top = 46 + 'vh';
+            first = 1;
+            protoExtension.style.top = 53 + 'vh';
+            protoExtension.style.height = 14 + 'vh';
+        }
+        else {
+            prototype.style.top = 60 + 'vh';
+            first = 0;
+            setTimeout(function() {
+                protoExtension.style.height = 0 + 'vh';
+                protoExtension.style.top = 65 + 'vh';
+            }, 0);
+        }
+
+    });
+
+    urban.addEventListener('click', function() {
+        if (second == 0) {
+            urban.style.top = 44 + 'vh';
+            second = 1;
+            urbanExtension.style.top = 51 + 'vh';
+            urbanExtension.style.height = 14 + 'vh';
+        }
+        else {
+            urban.style.top = 60 + 'vh';
+            second = 0;
+            setTimeout(function() {
+                urbanExtension.style.height = 0 + 'vh';
+                urbanExtension.style.top = 65 + 'vh';
+            }, 0);
+        }
+
+    });
+
+</script>
+
+</body>
+</html>

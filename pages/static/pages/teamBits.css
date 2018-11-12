@@ -1,0 +1,817 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.support
+{
+    width: 25vw;
+    height: 21vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    background: rgba(0,0,0,0.9);
+    z-index: 105;
+    clip-path: polygon(0 0, 100% 0, 72% 100%, 0% 100%);
+    transition: opacity 0.5s linear;
+}
+
+.facebooktwo
+{
+    position: absolute;
+    top: 0;
+    left: 81vw;
+    z-index: 200;
+    width: 2vw;
+    height: 4vh;
+    overflow: hidden;
+    font-size: 20px;
+    background: rgb(0,200,0);
+    color: white;
+}
+
+.facebooktwo > i
+{
+    transform: translate(8px, 3px);
+}
+
+.instagramtwo
+{
+    position: absolute;
+    top: 0;
+    left: 85vw;
+    z-index: 200;
+    width: 2vw;
+    height: 4vh;
+    overflow: hidden;
+    font-size: 20px;
+    background: rgb(0,200,0);
+    color: white;
+}
+
+.instagramtwo > i
+{
+    transform: translate(5px, 2px);
+}
+
+.twittertwo
+{
+    position: absolute;
+    top: 0;
+    left: 89vw;
+    z-index: 200;
+    width: 2vw;
+    height: 4vh;
+    overflow: hidden;
+    font-size: 20px;
+    background: rgb(0,200,0);
+    color: white;
+}
+
+.twittertwo > i
+{
+    transform: translate(5px, 2.5px);
+}
+
+.twittertwo:hover
+{
+    color: black;
+}
+
+.makeBlur
+{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 104;
+}
+
+.slideshow-container
+{
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.slideshow-container > div > img
+{
+    filter: brightness(50%);
+}
+
+.prev
+{
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    width: 3vw;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+    background: rgba(250,250,250,0.5);
+    transform: translateY(-50%);
+    z-index: 110;
+}
+
+.next
+{
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    text-align: center;
+    width: 3vw;
+    font-size: 50px;
+    color: black;
+    background: rgba(250,250,250,0.5);
+    transform: translateY(-50%);
+    z-index: 500;
+}
+
+.prev:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.next:hover
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dotContainer
+{
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    z-index: 500;
+    color: black;
+}
+
+.active, .dot:hover
+{
+    background-color: black;
+}
+
+.head
+{
+    width: 100vw;
+    height: 11vh;
+    background: rgba(65,65,65,0.8);
+    z-index: 105;
+    position: absolute;
+    top: 4vh;
+    left: 0;
+    overflow-y: hidden;
+    transition: background 0.5s linear;
+}
+
+.head > img
+{
+    display: inline-block;
+    width: auto;
+    position: relative;
+    top: 2vh;
+    color: black;
+    width: 21vw;
+}
+
+.head > a
+{
+    position: relative;
+    left: 30vw;
+    top: 1.8vh;
+    margin-right: 1.5%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Text Me One', sans-serif;
+    font-size: 16px;
+}
+
+.head > a:nth-child(2)
+{
+    color: lightgreen;
+}
+
+.head > a:hover
+{
+    color: lightgreen;
+}
+
+.head > .line
+{
+    width: 2.8vw;
+    background: rgba(0,255,0,1);
+    height: 0.3vh;
+    position: relative;
+    top: 0vh;
+    left: 51.2vw;
+}
+
+.head > .line2
+{
+    width: 2.8vw;
+    background: rgba(0,255,0,1);
+    height: 0.2vh;
+    position: relative;
+    top: 0vh;
+    left: 51.2vw;
+}
+
+.head > span
+{
+    opacity: 0;
+}
+
+.stuck
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.text > h1
+{
+    z-index: 5;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 58px;
+    width: auto;
+    height: 10vh;
+    font-family: 'Orbitron', sans-serif;
+    word-spacing: 10px;
+    overflow: hidden;
+    z-index: 107;
+    color: rgb(0,0,0);
+    color: white;
+}
+
+.text > p
+{
+    width: 70vw;
+    position: absolute;
+    top: 32%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-family: 'Work Sans', sans-serif;
+    z-index: 104;
+    color: rgb(0,0,0);
+    overflow: hidden;
+    color: white;
+}
+
+.about
+{
+    position: absolute;
+    top: 100vh;
+    width: 100vw;
+    height: 100vh;
+    background: #eee;
+}
+
+.about > img
+{
+    position: relative;
+    top: 11vh;
+    z-index: 5;
+}
+
+.about > .elaborate
+{
+    width: 40vw;
+    height: 89vh;
+    background: rgba(0,200,0,0.8);
+    position: absolute;
+    top: 11vh;
+    display: inline-block;
+    clip-path: polygon(0 0, 100% 0, 62.5% 100%, 0% 100%);
+    overflow: hidden;
+    z-index: 6;
+}
+
+.about > .elaborate > h1
+{
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    text-align: center;
+    overflow: hidden;
+    font-size: 70px;
+    font-family: 'Orbitron', sans-serif;
+    line-height: 100px;
+}
+
+.about > .upperHeader
+{
+    width: 75%;
+    height: 89vh;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 11vh;
+    left: 25vw;
+    overflow: hidden;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 6;
+}
+
+.about > .upperHeader > p
+{
+    width: 55vw;
+    height: 50vh;
+    position: relative;
+    top: 20vh;
+    left: 15vw;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+}
+
+.aboutShell
+{
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.aboutShell > img
+{
+    position: relative;
+    top: 11vh;
+}
+
+.aboutShell > .description
+{
+    position: absolute;
+    top: 11vh;
+    left: 0;
+    width: 72vw;
+    height: 89vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 6;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.aboutShell > .description > p
+{
+    width: 55vw;
+    height: 50vh;
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+    text-align: center;
+    line-height: 30px;
+}
+
+.aboutShell > .prototype
+{
+    background: rgba(255,255,255,1);
+    width: 12vw;
+    height: 7vh;
+    position: absolute;
+    top: 60vh;
+    left: 17vw;
+    overflow: hidden;
+    z-index: 11;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+    transition: all 0.2s linear;
+}
+
+.aboutShell > .prototype:hover
+{
+    cursor: pointer;
+}
+
+.aboutShell > .protoExtension
+{
+    position: absolute;
+    top: 65vh;
+    left: 15.7vw;
+    /*height: 14vh;*/
+    height: 0vh;
+    width: 13.3vw;
+    background: black;
+    color: white;
+    z-index: 10;
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+    overflow: hidden;
+    /*display: none;*/
+    transition: all 0.21s linear;
+}
+
+.aboutShell > .protoExtension > p
+{
+    width: 80%;
+    text-align: center;
+    transform: translateX(2vw);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+.aboutShell > .urbanExtension
+{
+    position: absolute;
+    top: 65vh;
+    left: 32.2vw;
+    height: 0vh;
+    width: 18.8vw;
+    background: black;
+    color: white;
+    z-index: 10;
+    clip-path: polygon(9.5% 0, 100% 0, 100% 100%, 0% 100%);
+    overflow: hidden;
+    /*display: none;*/
+    transition: all 0.21s linear;
+}
+
+.aboutShell > .urbanExtension > p
+{
+    width: 80%;
+    text-align: center;
+    transform: translateX(2vw);
+    font-family: 'Quicksand', sans-serif;
+    overflow: hidden;
+}
+
+.aboutShell > .prototype > h2
+{
+    position: absolute;
+    top: -1vh;
+    left: 1.5vw;
+    color: black;
+    font-size: 20px;
+    z-index: 10;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    letter-spacing: 3px;
+}
+
+.aboutShell > .urban
+{
+    background: rgba(255,255,255,1);
+    width: 17vw;
+    height: 7vh;
+    position: absolute;
+    top: 58vh;
+    left: 34vw;
+    overflow: hidden;
+    z-index: 11;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0% 100%);
+    transition: all 0.2s linear;
+}
+
+.aboutShell > .urban:hover
+{
+    cursor: pointer;
+}
+
+.aboutShell > .urban > h2
+{
+    position: absolute;
+    top: -1vh;
+    left: 1.5vw;
+    color: black;
+    font-size: 20px;
+    z-index: 10;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+    letter-spacing: 3px;
+}
+
+.aboutShell > .heading
+{
+    position: absolute;
+    top: 11vh;
+    left: 57.5vw;
+    width: 45vw;
+    height: 89vh;
+    background: rgba(0,200,0,0.8);
+    z-index: 10;
+    clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.aboutShell > .heading > h1
+{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    line-height: 80px;
+    overflow: hidden;
+    color: white;
+}
+
+.aboutShell > .downarrow1
+{
+    width: 0.3vw;
+    height: 11vh;
+    background: white;
+    position: absolute;
+    top: 67vh;
+    left: 23vw;
+    z-index: 10;
+}
+
+.aboutShell > .downarrow2
+{
+    width: 0.3vw;
+    height: 11vh;
+    background: white;
+    position: absolute;
+    top: 65vh;
+    left: 42vw;
+    z-index: 10;
+}
+
+.currentSponsors
+{
+    position: absolute;
+    top: 300vh;
+    left: 0;
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    background: white;
+}
+
+.currentSponsors > div
+{
+    width: 17vw;
+    height: 25vh;
+    overflow: hidden;
+    margin: 20px;
+    display: inline-block;
+    transform: translate(8vw, 22vh);
+    border: 3px solid #eee;
+}
+
+.currentSponsors > div:hover
+{
+    box-shadow: 3px 3px 5px #eee;
+}
+
+.currentSponsors > div > img
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.currentSponsors > h1
+{
+    position: absolute;
+    left: 10vw;
+    transform: translate(0vw, 7vh);
+    font-size: 30px;
+    font-family: 'Orbitron', sans-serif;
+    overflow: hidden;
+}
+
+.contactDetails
+{
+    position: absolute;
+    top: 400vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contactDetails > img
+{
+    position: relative;
+    top: 11vh;
+}
+
+.contactDetails > .fuelPassion
+{
+    width: 40vw;
+    height: 100vh;
+    background: rgba(0,200,0,0.8);
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    clip-path: polygon(0 0, 100% 0, 62.5% 100%, 0% 100%);
+    overflow-y: hidden;
+}
+
+.contactDetails > .fuelPassion > h1
+{
+    position: relative;
+    top: 30vh;
+    text-align: center;
+    transform: translateX(-5vw);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+.contactDetails > .inputForm
+{
+    width: 75vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 25vw;
+    background: rgb(0,0,0,0.8);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.contactDetails > .inputForm > h2
+{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    transform: translateX(5vw);
+    position: relative;
+    top: 15vh;
+    color: white;
+}
+
+.contactDetails > .inputForm > input
+{
+    position: relative;
+    top: 25vh;
+    left: 24vw;
+    padding: 10px;
+    width: 35vw;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(0,0,0);
+}
+
+.footer
+{
+    position: absolute;
+    top: 510vh;
+    height: 50vh;
+    width: 100vw;
+    overflow-y: hidden;
+}
+
+.footer:after
+{
+    content: "";
+    background-image: url('ShellEcoImages/72.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer > .cover
+{
+    width: 100vw;
+    height: 140vh;
+    background: rgba(0,0,0,0.5);
+}
+
+.footer > .cover > h2
+{
+    position: relative;
+    top: 3vh;
+    left: 5vw;
+    width: 90vw;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+.footer > .cover > div
+{
+    width: 20vw;
+    height: 19vh;
+    display: inline-block;
+    margin-left: 4vw;
+    transform: translate(0vw, 0vh);
+}
+
+.footer > .cover > div > p
+{
+    text-align: center;
+    transform: translateY(2vh);
+    color: white;
+    font-size: 25px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    overflow: hidden;
+}
+
+.footer > .cover > img
+{
+    position: relative;
+    top: 9vh;
+    left: 10vw;
+}
+
+.footer > .cover > p
+{
+    position: relative;
+    top: 12vh;
+    left: 10vw;
+    width: 80vw;
+    height: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+.footer > .cover > hr
+{
+    position: relative;
+    top: 5vh;
+    left: 5vw;
+    width: 90vw;
+    text-align: center;
+}
+
+.footer > .cover > h1
+{
+    position: relative;
+    top: 25vh;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.footer > .cover > .facebook
+{
+    position: relative;
+    top: 25vh;
+    left: 45vw;
+    color: white;
+    font-size: 35px;
+}
+
+.footer > .cover > .instagram
+{
+    position: relative;
+    top: 25vh;
+    left: 48vw;
+    color: white;
+    font-size: 35px;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track
+{
+    background: #f1f1f1;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb
+{
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+{
+    background: #555; 
+}

@@ -1,0 +1,290 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shell Eco Marathon</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'pages/efficiency.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Diplomata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".link1").mouseover(function()
+			{
+				$(".line").css("left","73.2vw");
+				$(".line").css("width","3.5vw");
+			});
+			$(".link2").mouseover(function()
+			{
+				$(".line").css("left","78.8vw");
+				$(".line").css("width","6vw");
+			});
+			$(".link3").hover(function()
+			{
+				$(".line").css("left","86.5vw");
+				$(".line").css("width","6vw");
+			});
+		});
+
+        $(document).ready(function() {
+            $(".mySlides:nth-child(1)").css("display","block");
+        });
+
+	</script>
+</head>
+<body>
+
+	<div class="loaderScreen">
+		<div class="loader">
+			<div class="dot"></div>
+		</div>
+	</div>
+
+    <div class="support"></div>
+    <a class="facebooktwo" href="https://m.facebook.com/profile.php?id=228172260639135&ref=content_filter"><i class="fa fa-facebook"></i></a>
+    <a class="instagramtwo" href="https://www.instagram.com/team_bits_shellecomarathon/"><i class="fa fa-instagram"></i></a>
+    <a class="twittertwo" href="https://twitter.com/_TeamBITS"><i class="fa fa-twitter"></i></a>
+
+	<div class="head">
+		<img src="{% static 'ShellEcoImages/teamLogo.png' %}">
+		<a href="/" class="link1">HOME</a>
+		<a href="/efficiency/" class="link2">OUR CARS</a>
+		<a href="/team/" class="link3">THE TEAM</a>
+		<span class="span" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+		<div class="line"></div>
+	</div>
+
+	<!-- <div id="mySidenav" class="sidenav">
+		<a class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="file:///C:/html_css_pages/teamEcoTitans.html#">Home</a>
+		<a href="file:///C:/html_css_pages/teamEcoTitansEfficiency.html#">Our Cars</a>
+		<a href="file:///C:/html_css_pages/teamEcoTitansTeam.html#">The Team</a>
+		<a href="file:///C:/html_css_pages/teamEcoTitansSponsors.html#">Partnerships</a>
+	</div> -->
+
+	<div class="titans">
+        <img src="{% static 'ShellEcoImages/carName2.png' %}" class="img">
+        <div class="blackBack"></div>
+        <div class="mySlides">
+            <!-- <h1 class="">Car of 2019</h1> -->
+            <h2>01&nbsp;|&nbsp;<span>2019</span></h2>
+            <p class="movement fade"><b>First student built car in India to run on 100% Ethanol</b></p><br>
+            <p class="movementdelayone fadedelayone"><b>Chassis: LightWeight carbon Fiber</b></p><br>
+            <p class="movementdelaytwo fadedelaytwo"><b>The Compression Ratio was increased from 10 to 13</b></p>
+            <img class="fade" src="{% static 'ShellEcoImages/media.png' %}" style="width: 50%">
+        </div>
+        <div class="mySlides">
+            <!-- <h1 class="">Daksh</h1> -->
+            <h2>02 &nbsp;|&nbsp;&nbsp;<span>2018</span></h2>
+            <p class="movement fade"><b>First student built car in India to run on 100% Ethanol</b></p><br>
+            <p class="movementdelayone fadedelayone"><b>Chassis: LightWeight carbon Fiber</b></p><br>
+            <p class="movementdelaytwo fadedelaytwo"><b>The Compression Ratio was increased from 10 to 13</b></p>
+            <img class="fade" src="{% static 'ShellEcoImages/78.jpg' %}" style="width: 50%">
+        </div>
+        <div class="mySlides">
+            <!-- <h1 class="">Myriad</h1> -->
+            <h2>03 &nbsp;|&nbsp;&nbsp;<span>2017</span></h2>
+            <p class="movement fade"><b>Gasoline Urban Concept: 91 Km/L Mileage</b></p><br>
+            <p class="movementdelayone fadedelayone"><b>Carbon fiber fairing with 50% lighter Aluminium chassis</b></p><br>
+            <p class="movementdelaytwo fadedelaytwo"><b>The team won 'Preservance and Spirit Award of the Event'<br> which carried cash prize of $ 2,000</b></p>
+            <img class="fade" src="{% static 'ShellEcoImages/96.jpg' %}" style="width: 50%">
+        </div>
+        <div class="mySlides">
+            <!-- <h1 class="">Vortex</h1> -->
+            <h2>04 &nbsp;|&nbsp;&nbsp;<span>2015</span></h2>
+            <p class="movement fade"><b>Gasoline Prototype: 83 Km/L Mileage</b></p><br>
+            <p class="movementdelayone fadedelayone"><b>Weight of tyres was reduced drastically</b></p><br>
+            <p class="movementdelaytwo fadedelaytwo"><b>Aerodynamically more optimized with glass-fibre fairing</b></p>
+            <img class="fade" src="{% static 'ShellEcoImages/vortex.png' %}" style="width: 50%">
+        </div>
+        <div class="mySlides">
+            <!-- <h1 class="">Eklavya</h1> -->
+            <h2>05 &nbsp;|&nbsp;&nbsp;<span>2012</span></h2>
+            <p class="movement fade"><b>Prototype category-125CC Engine</b></p><br>
+            <p class="movementdelayone fadedelayone"><b>Gasoline: 70 Km/L Mileage</b></p><br>
+            <p class="movementdelaytwo fadedelaytwo"><b>Design: Go-kart style steering</b></p>
+            <img class="fade" src="{% static 'ShellEcoImages/eklavya.png' %}" style="width: 50%">
+        </div>
+        <a class="next" onclick="plusSlides(1);moveDown()"><img src="{% static 'ShellEcoImages/right-arrow.png' %}"></a>
+        <a class="prev" onclick="plusSlides(-1);moveUp()"><img src="{% static 'ShellEcoImages/left-arrow.png' %}"></a>
+    </div>
+
+	<div class="footer">
+        <div class="cover">
+            <h2>Contact Us</h2>
+            <hr>
+            <h1>Copyright © 2018 Team BITS. All Rights Reserved.</h1>
+            <div class="prateek">
+                <p>Prateek Jain</p>
+                <p>231456588</p>
+            </div>
+            <div class="deep">
+                <p>Deep Sheth</p>
+                <p>489624585</p>
+            </div>
+            <div class="aman">
+                <p>Aman Garg</p>
+                <p>478523552</p>
+            </div>
+            <div class="utkarsh">
+                <p>Utkarsh Agarwal</p>
+                <p>123456789</p>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript">
+
+		window.addEventListener("load", function()
+		{
+			var load_screen = document.getElementsByClassName("loaderScreen")[0];
+			document.body.removeChild(load_screen);
+		});
+		
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+    <script>
+
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementsByClassName('head')[0];
+        var sticky = header.offsetTop;
+        var support = document.getElementsByClassName("support")[0];
+        var pos = 31;
+        var slideIndex = 1;
+        var pushDown = 1;
+        var positionOfBack = document.getElementsByClassName("blackBack")[0];
+        var posy = document.getElementsByClassName("img")[0];
+        showSlides(slideIndex);
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("stuck");
+                support.style.opacity = 0;
+            } else {
+                header.classList.remove("stuck");
+                support.style.opacity = 1;
+            }
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1;}
+            if (n < 1) {slideIndex = slides.length; }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+
+        function moveDown() {
+            if (pushDown == 5) {
+                pushDown = 0;
+                posy.style.transform = 'translateY(' + -16.5*pushDown + ')';
+            }
+            posy.style.transform = 'translateY(' + -16.5*pushDown + 'vh)';
+            pushDown += 1;
+        }
+
+        function moveUp() {
+            if (pushDown == 1) {
+                pushDown = 6;
+                posy.style.transform = 'translateY(' + -16.5*pushDown + 'vh)';
+            }
+            pushDown -= 1;
+            posy.style.transform = 'translateY(' + (-16.5*pushDown + 16.5) + 'vh)';
+        }
+
+    </script>
+
+</body>
+</html>
+
+<!-- <div class="eklavya">
+        <div class="blur"></div>
+        <h1>TITANS OF EFFICIENCY / OUR CARS</h1>
+        <h3>Eklavya (2012)</h3>
+        <ol>
+            <li>1) Prototype category-125CC Engine</li>
+            <li>2) Gasoline: 70 Km/L Mileage</li>
+            <li>3) Design: Go-kart style steering</li>
+            <li>4) Body: Wood</li>
+            <li>5) Chassis: Mild steel</li>
+            <li>6) We were one of the two only Indian teams to qualify all the technical inspections in the very first attempt</li>
+        </ol>
+        <img src="ShellEcoImages/70.jpg">
+    </div>
+    <div class="vortex">
+        <div class="blur"></div>
+        <h3>Vortex (2015)</h3>
+        <ol>
+            <li>1) Gasoline Prototype: 83 Km/L Mileage</li>
+            <li>2) Weight of tyres was reduced drastically.</li>
+            <li>3) Aerodynamically more optimized with glass-fibre fairing.</li>
+            <li>4) The team stood 12th out of 31 teams from Asia and 2nd from the subcontinent out of 11 teams.</li>
+            <li>5) Also received 'Letter Of Recognition' from the highest authority of SEM Asia</li>
+        </ol>
+        <img src="ShellEcoImages/73.png">
+    </div>
+    <div class="myriad">
+        <div class="blur"></div>
+        <h3>Myriad (2016)-100CC Engine</h3>
+        <ol>
+            <li>1) Gasoline Urban Concept: 91 Km/L Mileage</li>
+            <li>2) Carbon fiber fairing with 50% lighter Aluminium chassis.</li>
+            <li>3) The team won 'Preservance and Spirit Award of the Event' which carried cash prize of $ 2,000</li>
+        </ol>
+        <img src="ShellEcoImages/96.jpg">
+    </div>
+    <div class="tapas">
+        <div class="blur"></div>
+        <h3>Tapas (2017)-100CC Engine</h3>
+        <ol>
+            <li>1) Ethanol Urban Concept-70 Km/L Mileage</li>
+            <li>2) Carbon Fiber Monocoque</li>
+            <li>3) Special Recognition Award Rs. 2 lakhs with being India's first student-team built Ethanol fuel vehicle</li>
+        </ol>
+        <img src="ShellEcoImages/tapas.png">
+    </div>
+
+    <div class="daksh">
+        <div class="blur"></div>
+        <h3>Daksh (2018)-100CC Engine</h3>
+        <ol>
+            <li>1) First student built car in India to run on 100% Ethanol</li>
+            <li>2) Chassis: LightWeight carbon Fiber</li>
+            <li>3) The Compression Ratio was increased from 10 to 13</li>
+            <li>4) Programmed with ECU injector values and spark timings from stratch.</li>
+            <li>5) Did intake and exhaust length calculations using 1-D simulations through Ricardo Wave</li>
+        </ol>
+        <img src="ShellEcoImages/abcd.jpg">
+    </div> -->

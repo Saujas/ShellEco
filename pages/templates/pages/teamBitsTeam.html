@@ -1,0 +1,252 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shell Eco Marathon</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'pages/teamBitsTeam.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$(".link1").mouseover(function()
+			{
+				$(".line").css("left","71.2vw");
+				$(".line").css("width","3.8vw");
+			});
+			$(".link2").mouseover(function()
+			{
+				$(".line").css("left","76.4vw");
+				$(".line").css("width","6.5vw");
+			});
+			$(".link3").hover(function()
+			{
+				$(".line").css("left","84.9vw");
+				$(".line").css("width","5.5vw");
+			});
+		});
+	</script>
+</head>
+<body style="background: rgb(250,250,250);">
+
+	<div class="loaderScreen">
+		<div class="loader">
+			<div class="dot"></div>
+		</div>
+	</div>
+
+    <div class="support"></div>
+    <a class="facebooktwo" href="https://m.facebook.com/profile.php?id=228172260639135&ref=content_filter"><i class="fa fa-facebook"></i></a>
+    <a class="instagramtwo" href="https://www.instagram.com/team_bits_shellecomarathon/"><i class="fa fa-instagram"></i></a>
+    <a class="twittertwo" href="https://twitter.com/_TeamBITS_"><i class="fa fa-twitter"></i></a>
+
+	<div class="head">
+		<img src="{% static 'ShellEcoImages/teamLogo.png' %}">
+		<a href="/" class="link1">HOME</a>
+		<a href="/efficiency/" class="link2">OUR CARS</a>
+		<a href="/team/" class="link3">THE TEAM</a>
+		<span class="span" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+		<div class="line"></div>
+	</div>
+
+<!-- 	<div id="mySidenav" class="sidenav">
+		<a class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="file:///C:/html_css_pages/teamEcoTitans.html#">Home</a>
+		<a href="file:///C:/html_css_pages/teamEcoTitansEfficiency.html#">Our Cars</a>
+		<a href="file:///C:/html_css_pages/teamEcoTitansTeam.html#">The Team</a>
+		<a href="">Partnerships</a>
+	</div> -->
+
+	<div class="titans">
+        <img src="{% static 'ShellEcoImages/teamPhoto.jpg' %}" style="width:100vw;height:66.66vw;position: absolute;top:-15vh">
+	</div>
+
+    <div class="container">
+        <blockquote>
+            <h1>ABOUT US</h1>
+            <p>Team BITS has been a pioneer in the development of automobile energy-efficieny since its inception in 2012. A group of almost-engineers designing and building a ultra-energy-efficient vehicle  that is sustainable and gives an obvious insight into the future. We are the first student team from the subcontinent to have run a E-100 Vehicle. The team presently is putting all its genius and dedication to fabricate a energy efficient electric vehicle alonside making necessary betterments in the E-100 Vehicle.</p>
+        </blockquote>
+    </div>
+
+	<div class="captain">
+        <div class="teamCaptain">
+            <h6 class="h61" style="font-size: 17px;">Team manager EV, Design Head</h6>
+            <img src="{% static 'ShellEcoImages/66.jpg' %}">
+            <p style="font-size: 17px;">Prateek Jain</p>
+        </div>
+        <div class="teamViceCaptain">
+            <h6 class="h62" style="font-size: 17px;">Team manager ICE vehicle</h6>
+            <img src="{% static 'ShellEcoImages/67.jpg' %}">
+            <p style="font-size: 17px;">Aman Garg</p>
+        </div>
+        <div class="teamABCD">
+            <h6 class="h63" style="font-size: 17px;">Vehicle dynamics head</h6>
+            <img src="{% static 'ShellEcoImages/69.jpg' %}">
+            <p style="font-size: 17px;">Utkarsh Agarwal</p>
+        </div>
+        <div class="marketingHead">
+            <h6 class="h63" style="font-size: 17px;">Marketing head</h6>
+            <img src="{% static 'ShellEcoImages/97.jpg' %}">
+            <p style="font-size: 17px;">Deep Sheth</p>
+        </div>
+	</div>
+
+    <h1 style="font-family: 'Orbitron', sans-serif;">SUB SYSTEMS</h1>
+
+    <h2 class="evp">EV Powertrain</h2>
+
+    <div class="powerTrain">
+         <div class="nihar">
+            <img src="{% static 'ShellEcoImages/80.jpg' %}">
+            <p>Nihar Zanvar</p>
+        </div>
+        <div class="sparsh">
+            <img src="{% static 'ShellEcoImages/81.jpg' %}">
+            <p>Sparsh Wairya</p>
+        </div>
+        <div class="sidharth">
+            <img src="{% static 'ShellEcoImages/82.jpg' %}">
+            <p>Sidharth Purohit</p>
+        </div>
+        <div class="parth">
+            <img src="{% static 'ShellEcoImages/83.jpg' %}">
+            <p>Parth Samnani</p>
+        </div>
+        <div class="jyoti">
+            <img src="{% static 'ShellEcoImages/87.jpg' %}">
+            <p>Jyoti Prakash</p>
+        </div>
+        <div class="tejas">
+            <img src="{% static 'ShellEcoImages/92.jpg' %}">
+            <p>Tejas Shah</p>
+        </div>
+        <!-- <div class="nihar">
+            <img src="ShellEcoImages/80.jpg">
+            <p>Nihar Zanvar</p>
+        </div>
+        <div class="sparsh">
+            <img src="ShellEcoImages/81.jpg">
+            <p>Sparsh Wairya</p>
+        </div> -->
+    </div>
+
+    <h2 class="chas">Chasis</h2>
+
+    <div class="chasis">
+        <div class="sarthak">
+            <img src="{% static 'ShellEcoImages/84.jpg' %}">
+            <p>Sarthak Bansal</p>
+        </div>
+        <div class="abhishek">
+            <img src="{% static 'ShellEcoImages/90.jpg' %}">
+            <p>Abhishek</p>
+        </div>
+        <div class="aradhya">
+            <img src="{% static 'ShellEcoImages/93.jpg' %}">
+            <p>Aradhya</p>
+        </div>
+    </div>
+
+    <h2 class="ice">ICE Powertrain</h2>
+
+    <div class="icept">
+        <div class="aditya">
+            <img src="{% static 'ShellEcoImages/91.jpg' %}">
+            <p>Aditya Soni</p>
+        </div>
+        <div class="anurag">
+            <img src="{% static 'ShellEcoImages/94.jpg' %}">
+            <p>Anurag Mallik</p>
+        </div>
+    </div>
+
+    <h2 class="vd">Vehicle Dynamics</h2>
+
+    <div class="vehicle">
+        <div class="yatik">
+            <img src="{% static 'ShellEcoImages/88.jpg' %}">
+            <p>Yatik Gupta</p>
+        </div>
+        <div class="gaurav">
+            <img src="{% static 'ShellEcoImages/89.jpg' %}">
+            <p>Gaurav Rathi</p>
+        </div>
+    </div>
+
+	<div class="footer">
+        <div class="cover">
+            <h2>Contact Us</h2>
+            <hr>
+            <h1>Copyright © 2018 Team BITS. All Rights Reserved.</h1>
+            <div class="prateek">
+                <p>Prateek Jain</p>
+                <p>231456588</p>
+            </div>
+            <div class="deep">
+                <p>Deep Sheth</p>
+                <p>489624585</p>
+            </div>
+            <div class="aman">
+                <p>Aman Garg</p>
+                <p>478523552</p>
+            </div>
+            <div class="utkarsh">
+                <p>Utkarsh Agarwal</p>
+                <p>123456789</p>
+            </div>
+        </div>
+    </div>
+
+	<script type="text/javascript">
+
+		window.addEventListener("load", function()
+		{
+			var load_screen = document.getElementsByClassName("loaderScreen")[0];
+			document.body.removeChild(load_screen);
+		});
+		
+		function openNav() {
+		    document.getElementById("mySidenav").style.width = "250px";
+		}
+
+		function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
+    <script>
+
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementsByClassName('head')[0];
+        var sticky = header.offsetTop;
+        var support = document.getElementsByClassName("support")[0];
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("stuck");
+                support.style.opacity = 0;
+            } else {
+                header.classList.remove("stuck");
+                support.style.opacity = 1;
+            }
+        }
+
+    </script>
+
+</body>
+</html>

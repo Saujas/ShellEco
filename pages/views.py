@@ -19,23 +19,15 @@ def index(request):
 
     args['form'] = form
 
-    return render_to_response('pages/teamEcoTitans.html', args)
-
-
-def about(request):
-    return render(request, 'pages/teamEcoTitansAbout.html')
+    return render_to_response('pages/teamBits.html', args)
 
 
 def team(request):
-    return render(request, 'pages/teamEcoTitansTeam.html')
+    return render(request, 'pages/teamBitsTeam.html')
 
 
 def efficiency(request):
-    return render(request, 'pages/teamEcoTitansEfficiency.html')
-
-
-def sponsors(request):
-    return render(request, 'pages/teamEcoTitansSponsors.html')
+    return render(request, 'pages/teamBitsEfficiency.html')
 
 
 
