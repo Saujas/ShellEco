@@ -183,6 +183,7 @@
     left: 0;
     overflow-y: hidden;
     transition: background 0.5s linear;
+    padding-right: 150px;
 }
 
 .head > img

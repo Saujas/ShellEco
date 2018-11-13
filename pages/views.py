@@ -1,25 +1,20 @@
 from django.shortcuts import render, render_to_response
 from .models import Detail
-from .forms import DetailForm
 from django.http import HttpResponseRedirect
 from django.template.context_processors import csrf
 
 
 def index(request):
     if request.POST:
-        form = DetailForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return HttpResponseRedirect('/')
-    else:
-        form = DetailForm()
+        name = request.POST['name']
+        email = request.POST['email']
+        number = request.POST['number']
+
+        obj = Detail(name=name, email=email, number=number)
+        obj.save()
    
-    args = {}
-    args.update(csrf(request))
-
-    args['form'] = form
-
-    return render_to_response('pages/teamBits.html', args)
+    
+    return render(request, 'pages/teamBits.html')
 
 
 def team(request):
