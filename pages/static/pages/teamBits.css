@@ -36,7 +36,7 @@
 
 .facebooktwo > i
 {
-    transform: translate(8px, 3px);
+    transform: translate(5px, 3px);
 }
 
 .instagramtwo
@@ -55,7 +55,7 @@
 
 .instagramtwo > i
 {
-    transform: translate(5px, 2px);
+    transform: translate(8px, 2px);
 }
 
 .twittertwo
@@ -179,11 +179,11 @@
     background: rgba(65,65,65,0.8);
     z-index: 105;
     position: absolute;
+    padding-right: 250px;
     top: 4vh;
     left: 0;
     overflow-y: hidden;
     transition: background 0.5s linear;
-    padding-right: 150px;
 }
 
 .head > img
@@ -674,7 +674,7 @@
     left: 24vw;
     padding: 10px;
     width: 35vw;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: rgb(0,0,0);
 }
 
@@ -718,15 +718,16 @@
     font-family: 'Orbitron', sans-serif;
     color: white;
     overflow: hidden;
+    font-size: 45px;
 }
 
 .footer > .cover > div
 {
-    width: 20vw;
-    height: 19vh;
+    width: 28vw;
+    height: 23vh;
     display: inline-block;
     margin-left: 4vw;
-    transform: translate(0vw, 0vh);
+    transform: translate(0vw, 2vh);
 }
 
 .footer > .cover > div > p
@@ -734,8 +735,8 @@
     text-align: center;
     transform: translateY(2vh);
     color: white;
-    font-size: 25px;
-    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 20px;
+    font-family: 'Quicksand', cursive;
     overflow: hidden;
 }
 
@@ -769,9 +770,9 @@
 .footer > .cover > h1
 {
     position: relative;
-    top: 25vh;
+    top: 0vh;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 20px;
 }

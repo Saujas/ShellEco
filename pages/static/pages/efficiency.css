@@ -1,8 +1,8 @@
 *
 {
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 .support
@@ -21,42 +21,42 @@
 
 .loaderScreen
 {
-	background-color: rgba(0,100,120,1);
-	width: 100vw;
-	height: 100vh;
+    background-color: rgba(0,100,120,1);
+    width: 100vw;
+    height: 100vh;
 }
 
 .loaderScreen > .loader
 {
-	width: 100px;
-	height: 100px;
-	border: 4px solid white;
-	border-radius: 50%;
-	background-color: transparent;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .loaderScreen > .loader > .dot
 {
-	position: relative;
-	top: 1vh;
-	left: 50%;
-	width: 5px;
-	height: 5px;
-	background: white;
-	border-radius: 50%;
-	transform-origin: 0 45px;
-	transform: rotate(0deg);
-	animation: rotate 1s linear infinite;
+    position: relative;
+    top: 1vh;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    transform-origin: 0 45px;
+    transform: rotate(0deg);
+    animation: rotate 1s linear infinite;
 }
 
 @keyframes rotate
 {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 .facebooktwo
@@ -75,7 +75,7 @@
 
 .facebooktwo > i
 {
-    transform: translate(8px, 3px);
+    transform: translate(5px, 3px);
 }
 
 .instagramtwo
@@ -94,7 +94,7 @@
 
 .instagramtwo > i
 {
-    transform: translate(5px, 2px);
+    transform: translate(8px, 2px);
 }
 
 .twittertwo
@@ -123,7 +123,7 @@
 
 .head
 {
-	width: 100vw;
+    width: 100vw;
     height: 11vh;
     background: rgba(65,65,65,0.8);
     z-index: 105;
@@ -135,27 +135,27 @@
 
 .head > span
 {
-	opacity: 0;
+    opacity: 0;
 }
 
 #mySidenav
 {
-	opacity: 0;
+    opacity: 0;
 }
 
 .head > img
 {
-	display: inline-block;
-	width: auto;
-	position: relative;
-	top: 2vh;
-	color: black;
-	width: 21vw;
+    display: inline-block;
+    width: auto;
+    position: relative;
+    top: 2vh;
+    color: black;
+    width: 21vw;
 }
 
 .head > a
 {
-	position: relative;
+    position: relative;
     left: 52vw;
     top: -1vh;
     margin-right: 1.5%;
@@ -199,7 +199,7 @@
 
 .titans
 {
-	position: absolute;
+    position: absolute;
     top: 0vh;
     width: 100vw;
     height: 100vh;
@@ -322,7 +322,7 @@
 {
     position: absolute;
     top: 50vh;
-    left: 50vh;
+    left: 100vh;
     z-index: 12;
     transform: scale(0.8);
 }
@@ -415,12 +415,13 @@
     font-family: 'Orbitron', sans-serif;
     color: white;
     overflow: hidden;
+    font-size: 45px;
 }
 
 .footer > .cover > div
 {
-    width: 20vw;
-    height: 19vh;
+    width: 28vw;
+    height: 22vh;
     display: inline-block;
     margin-left: 4vw;
     transform: translate(0vw, 10vh);
@@ -431,9 +432,10 @@
     text-align: center;
     transform: translateY(2vh);
     color: white;
-    font-size: 25px;
-    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 20px;
+    font-family: 'Quicksand', cursive;
     overflow: hidden;
+    line-height: 40px;
 }
 
 .footer > .cover > img
@@ -450,7 +452,7 @@
     left: 10vw;
     width: 80vw;
     height: auto;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: white;
 }
 
@@ -466,9 +468,9 @@
 .footer > .cover > h1
 {
     position: relative;
-    top: 35vh;
+    top: 10vh;
     text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: white;
     font-size: 20px;
 }
@@ -494,424 +496,4 @@
 ::-webkit-scrollbar-thumb:hover
 {
     background: #555; 
-}
-
-@media screen and (max-width: 1050px)
-{
-	.headCopy
-	{
-		display: none;
-	}
-
-	.head > a
-	{
-		position: relative;
-		left: 5vw;
-		font-size: 20px;
-	}
-
-	.head > .line
-	{
-		display: none;
-	}
-
-	.head > img
-	{
-		width: 40vw;
-	}
-
-	.titans
-	{
-		position: absolute;
-		top: 7.8vh;
-		height: 50vh;
-		background-image: url('ShellEcoImages/71.png');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
-
-	.titans > .colorBlack
-	{
-		height: 50vh;
-	}
-
-	.eklavya > ol
-	{
-		position: relative;
-		top: 20vh;
-	}
-
-	.eklavya > img
-	{
-		position: relative;
-		top: 25vh;
-		left: 10vw;
-		width: 80vw;
-	}
-
-	.vortex > ol
-	{
-		position: relative;
-		top: 20vh;
-	}
-
-	.vortex > img
-	{
-		position: relative;
-		top: 25vh;
-		left: 10vw;
-		width: 80vw;
-	}
-
-	.myriad
-	{
-		overflow-y: hidden;
-	}
-
-	.myriad > ol
-	{
-		position: relative;
-		top: 25vh;
-	}
-
-	.myriad > img
-	{
-		position: relative;
-		top: 30vh;
-		left: 10vw;
-		width: 80vw;
-		height: 60vh;
-	}
-
-	.tapas
-	{
-		overflow-y: hidden;
-	}
-
-	.tapas > ol
-	{
-		position: relative;
-		top: 25vh;
-	}
-
-	.tapas > img
-	{
-		position: relative;
-		top: 35vh;
-		left: 10vw;
-		width: 80vw;
-		height: 60vh;
-	}
-
-	.daksh
-	{
-		height: 140vh;
-	}
-
-	.daksh > ol
-	{
-		position: relative;
-		top: 25vh;
-	}
-
-	.daksh > img
-	{
-		position: relative;
-		top: 35vh;
-		left: 10vw;
-		width: 80vw;
-		height: 60vh;
-	}
-
-	.footer
-	{
-		position: absolute;
-		top: 590vh;
-	}
-}
-
-@media screen and (max-width: 800px)
-{
-	.head > a
-	{
-		font-size: 15px;
-	}
-}
-
-@media screen and (max-width: 450px)
-{
-	.head > a
-	{
-		display: none;
-	}
-
-	.head > span
-	{
-		opacity: 1;
-		position: absolute;
-		right: 2vw;
-		top: 0;
-		font-size: 30px;
-	}
-
-	#mySidenav
-	{
-		opacity: 1;
-		z-index: 11;
-	}
-
-	.sidenav {
-	    height: 100%;
-	    width: 0;
-	    position: fixed;
-	    z-index: 1;
-	    top: 0;
-	    left: 0;
-	    background-color: #111;
-	    overflow-x: hidden;
-	    transition: 0.5s;
-	    padding-top: 60px;
-	}
-
-	.sidenav a {
-	    padding: 8px 8px 8px 32px;
-	    text-decoration: none;
-	    font-size: 25px;
-	    color: #818181;
-	    display: block;
-	    transition: 0.3s;
-	    overflow-x: show;
-	}
-
-	.sidenav a:hover {
-	    color: #f1f1f1;
-	}
-
-	.sidenav .closebtn {
-	    position: absolute;
-	    top: 0;
-	    right: 25px;
-	    font-size: 36px;
-	    margin-left: 50px;
-	}
-
-	.titans
-	{
-		position: absolute;
-		top: 6vh;
-	}
-
-	.eklavya
-	{
-		position: absolute;
-		top: 45vh;
-		height: 90vh;
-	}
-
-	.eklavya > h1
-	{
-		font-size: 23px;
-	}
-
-	.eklavya > h3
-	{
-		font-size: 20px;
-	}
-
-	.eklavya > ol
-	{
-		line-height: 25px;
-		font-size: 15px;
-	}
-
-	.vortex
-	{
-		position: absolute;
-		top: 135vh;
-		height: 90vh;
-	}
-
-	.vortex > h1
-	{
-		font-size: 23px;
-	}
-
-	.vortex > h3
-	{
-		font-size: 20px;
-	}
-
-	.vortex > ol
-	{
-		line-height: 25px;
-		font-size: 15px;
-	}
-
-	.myriad
-	{
-		position: absolute;
-		top: 225vh;
-	}
-
-	.myriad > h1
-	{
-		font-size: 23px;
-	}
-
-	.myriad > h3
-	{
-		font-size: 20px;
-	}
-
-	.myriad > ol
-	{
-		line-height: 25px;
-		font-size: 15px;
-	}
-
-	.tapas
-	{
-		position: absolute;
-		top: 325vh;
-	}
-
-	.tapas > h1
-	{
-		font-size: 23px;
-	}
-
-	.tapas > h3
-	{
-		font-size: 20px;
-	}
-
-	.tapas > ol
-	{
-		line-height: 25px;
-		font-size: 15px;
-	}
-
-	.daksh
-	{
-		position: absolute;
-		top: 425vh;
-		height: 120vh;
-	}
-
-	.daksh > h1
-	{
-		font-size: 23px;
-	}
-
-	.daksh > h3
-	{
-		font-size: 20px;
-	}
-
-	.daksh > ol
-	{
-		line-height: 25px;
-		font-size: 15px;
-		width: 80vw;
-	}
-
-	.footer
-	{
-		position: absolute;
-		top: 545vh;
-		height: 60vh;
-	}
-
-	.footer > .cover > h1
-	{
-		position: relative;
-		left: 2vw;
-	}
-}
-
-@media screen and (max-width: 376px)
-{
-	.eklavya > h1
-	{
-		font-size: 21px;
-		position: relative;
-		left: 2vw;
-	}
-
-	.titans
-	{
-		position: absolute;
-		top: 5vh;
-	}
-
-	.tapas
-	{
-		height: 110vh;
-	}
-
-	.daksh
-	{
-		overflow-y: hidden;
-		position: absolute;
-		top: 435vh;
-		height: 125vh;
-	}
-
-	.footer
-	{
-		height: 70vh;
-		position: absolute;
-		top: 560vh;
-	}
-
-	.footer > .cover > h1
-	{
-		font-size: 15px;
-	}
-
-	.footer > .cover > p
-	{
-		font-size: 15px;
-	}
-}
-
-@media screen and (max-width: 370px)
-{
-	.eklavya > h1
-	{
-		font-size: 21px;
-		position: relative;
-		left: 2vw;
-	}
-
-	.tapas
-	{
-		height: 110vh;
-	}
-
-	.daksh
-	{
-		overflow-y: hidden;
-		position: absolute;
-		top: 435vh;
-		height: 125vh;
-	}
-
-	.footer
-	{
-		height: 70vh;
-		position: absolute;
-		top: 560vh;
-	}
-
-	.footer > .cover > h1
-	{
-		font-size: 15px;
-	}
-
-	.footer > .cover > p
-	{
-		font-size: 15px;
-	}
 }
